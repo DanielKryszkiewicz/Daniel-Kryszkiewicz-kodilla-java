@@ -11,20 +11,24 @@ public class ShapeCollector {
         return shapeList.size();
     }
     void addFigure(Shape shape) {
+        shapeList.add(shape);
 
     }
 
     void removeFigure(Shape shape){
+        shapeList.remove(shape);
 
     }
 
     Shape getFigure(int n){
-
-        return null;
+       return shapeList.get(n);
     }
 
-    String showFigures(){
-
-        return null;
+    public String showFigures() {
+        String result = "";
+        for (Shape shapeName : shapeList) {
+            result = shapeName.getShapeName();
+        }
+        return result;
     }
 }
