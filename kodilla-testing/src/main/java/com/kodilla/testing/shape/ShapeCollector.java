@@ -27,7 +27,7 @@ public class ShapeCollector {
     public String showFigures() {
         String result = "";
         for (Shape shapeName : shapeList) {
-            result = shapeName.getShapeName();
+            result = result + shapeName.getShapeName();
         }
         return result;
     }

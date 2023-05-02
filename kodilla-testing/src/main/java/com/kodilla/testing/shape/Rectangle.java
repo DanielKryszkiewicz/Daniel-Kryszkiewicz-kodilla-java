@@ -10,9 +10,10 @@ public class Rectangle implements Shape {
         this.b = b;
     }
     @Override
-    public void getShapeName() {
-        System.out.println("Rectangle");
+    public String getShapeName() {
+        return "Rectangle";
     }
+
 
     @Override
     public double getField() {

@@ -10,8 +10,8 @@ public class Circle implements Shape {
         this.r = r;
     }
     @Override
-    public void getShapeName() {
-        System.out.println("Circle");
+    public String getShapeName() {
+        return "Circle";
     }
 
     @Override
