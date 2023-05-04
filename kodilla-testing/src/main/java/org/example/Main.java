@@ -1,7 +1,17 @@
-package org.example;
+class Main {
 
-public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        int a = 20;
+        int b = 30;
+
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            } else {
+                b -= a;
+            }
+        }
+        System.out.println("NWD = "+a);
     }
 }
