@@ -8,13 +8,15 @@ public class World {
 
     private List<Continent> continents;
 
+    public World() {
+        this.continents = new ArrayList<>();
+    }
+
+
     public void addContinent(Continent continent) {
         continents.add(continent);
     }
 
-    public World() {
-        this.continents = new ArrayList<>();
-    }
 
     public BigDecimal getPeopleQuantity() {
         return continents.stream()
