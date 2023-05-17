@@ -1,9 +1,12 @@
 package com.kodilla.stream.forumuser;
+import com.kodilla.stream.forumuser.Forum;
 
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-public class ForumUser {
+public final class ForumUser {
 
     private final int UserId;
     private final String name;
