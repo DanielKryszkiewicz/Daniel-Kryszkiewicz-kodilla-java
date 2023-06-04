@@ -1,7 +1,5 @@
 package com.kodilla.exception.test;
 
-import javax.swing.plaf.FileChooserUI;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,6 +12,12 @@ public class Main {
 
         try {
             flightCheck.findFlight(flight1);
+        } catch (RouteNotFoundException e) {
+            System.out.println(e.getMessage());
+
+        }
+        try {
+            flightCheck.findFlight(flight2);
         } catch (RouteNotFoundException e) {
             System.out.println(e.getMessage());
         }
