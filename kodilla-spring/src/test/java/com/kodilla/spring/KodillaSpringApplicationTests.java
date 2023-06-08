@@ -22,7 +22,7 @@ class KodillaSpringApplicationTests {
         String name = shape.getShapeName();
 
         //Then
-        assertEquals("This is a circle.", name);
+        assertEquals("This is a Circle", name);
 
     }
 
