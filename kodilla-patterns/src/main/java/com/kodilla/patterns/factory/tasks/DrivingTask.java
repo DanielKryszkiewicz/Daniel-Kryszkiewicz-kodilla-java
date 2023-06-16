@@ -2,10 +2,10 @@ package com.kodilla.patterns.factory.tasks;
 
 public class DrivingTask implements Task {
 
-    String taskName;
-    String where;
-    String using;
-    boolean execute;
+    private String taskName;
+    private String where;
+    private String using;
+    private boolean execute;
 
     public DrivingTask(String taskName, String where, String using) {
         this.taskName = taskName;
