@@ -6,11 +6,12 @@ import com.kodilla.hibernate.invoice.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 @SpringBootTest
 public class InvoiceDaoTestSuite {
@@ -44,9 +45,12 @@ public class InvoiceDaoTestSuite {
         //When
         invoiceDao.save(invoice1);
         int id = invoice1.getId();
+        List<Item> items = invoice1.getItems();
+
 
         //Then
         assertNotEquals(0, id);
+        assertEquals(3, items.size());
 
         //Clean
         invoiceDao.deleteById(id);
